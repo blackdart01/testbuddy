@@ -1,0 +1,49 @@
+*,
+body {
+  margin: 0;
+  /* width: 100%; */
+  padding: 0;
+}
+iframe {
+  position: absolute;
+  z-index: 10;
+}
+table {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+tr {
+  margin: 50px 50px !important;
+  color: red;
+}
+.tr td {
+  font-weight: bolder;
+  margin-right: 100px;
+  color: black !important;
+}
+tr td {
+  color: black;
+  border: 1px solid palevioletred;
+  padding: 0px 10px !important;
+  font-size: 1.2em;
+  margin: 0 15px !important;
+}
+@media only screen and (min-width: 768px) {
+  table {
+    font-size: 1em;
+    transition: 300ms ease-in-out;
+    /* padding: 0px 20px !important; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    font-size: 0.5em;
+    transition: 300ms ease-in-out;
+  }
+}
